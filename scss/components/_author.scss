@@ -1,0 +1,25 @@
+.author {
+  @include flex(row, flex-start, center);
+  gap: 2rem;
+}
+
+.author img {
+  width: 3.2rem;
+  border: 1px solid $white;
+  border-radius: 50%;
+}
+
+.author p {
+  color: $soft-blue;
+  font-weight: 300;
+}
+
+.author__name {
+  color: $white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.author__name:hover {
+  color: $cyan;
+}

@@ -1,0 +1,75 @@
+.card {
+  background-color: $dark-blue;
+  max-width: 35rem;
+  border-radius: 1.5rem;
+  padding: 2.8rem;
+}
+
+.card__image {
+  position: relative;
+  @include flex(row, center, center);
+}
+
+.hover__container {
+  @include flex(row, center, center);
+  position: absolute;
+  border-radius: 1.5rem;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $cyan-hover;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.hover__container:hover {
+  opacity: 1;
+}
+
+.image {
+  width: 100%;
+  border-radius: 1.5rem;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.title h1 {
+  color: $white;
+  font-size: 3rem;
+  margin: 2rem 0 0 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.title h1:hover {
+  color: $cyan;
+}
+
+.description p {
+  color: $soft-blue;
+  font-weight: 300;
+}
+
+.price {
+  @include flex(row, space-between, center);
+}
+
+.price span:first-child {
+  color: $cyan;
+  font-weight: 600;
+}
+
+.price span:last-child {
+  color: $soft-blue;
+  font-weight: 300;
+}
+
+hr {
+  background-color: $light-dark-blue;
+  height: 0.5px;
+  border: none;
+}
