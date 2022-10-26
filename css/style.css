@@ -14,12 +14,19 @@ body {
   height: 100vh;
   font-family: "Outfit", sans-serif; }
 
+main {
+  height: calc(100% - 3rem); }
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  height: calc(100% - 3rem); }
+  height: 100%; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
 
 .author {
   display: flex;
